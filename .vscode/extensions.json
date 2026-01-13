@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "vscode-icons-team.vscode-icons",
+    "vue.volar",
+    "formulahendry.auto-rename-tag",
+    "eamodio.gitlens",
+    "github.vscode-github-actions"
+  ]
+}

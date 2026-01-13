@@ -1,0 +1,26 @@
+{
+  // デフォルトのフォーマッターとしてESLintを指定する
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  // 保存したタイミングで自動的に整形を実行する
+  "editor.formatOnSave": false,
+  // 保存時のアクション設定
+  "editor.codeActionsOnSave": {
+    // ESLintの自動修正も同時に走らせる
+    "source.fixAll.eslint": "explicit",
+    // インポート文の並び替えはESLintで行う
+    "source.organizeImports": "never"
+  },
+  // 保存時に自動で直せるものについては画面に波線を出さない
+  "eslint.rules.customizations": [
+    { "rule": "style/*", "severity": "off", "fixable": true },
+    { "rule": "format/*", "severity": "off", "fixable": true },
+    { "rule": "*-indent", "severity": "off", "fixable": true },
+    { "rule": "*-spacing", "severity": "off", "fixable": true },
+    { "rule": "*-spaces", "severity": "off", "fixable": true },
+    { "rule": "*-order", "severity": "off", "fixable": true },
+    { "rule": "*-dangle", "severity": "off", "fixable": true },
+    { "rule": "*-newline", "severity": "off", "fixable": true },
+    { "rule": "*quotes", "severity": "off", "fixable": true },
+    { "rule": "*semi", "severity": "off", "fixable": true }
+  ]
+}
